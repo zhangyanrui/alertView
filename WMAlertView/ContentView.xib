@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="707" height="555"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VN7-QK-geB">
+                    <rect key="frame" x="293" y="64" width="121" height="29"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                </segmentedControl>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fL-17-YWs">
+                    <rect key="frame" x="341" y="116" width="25" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjJ-8h-GYz">
+                    <rect key="frame" x="329" y="154" width="51" height="31"/>
+                </switch>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ie8-7C-Xrn">
+                    <rect key="frame" x="343.5" y="208" width="20" height="20"/>
+                </activityIndicatorView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="M74-4M-Ry5">
+                    <rect key="frame" x="279" y="261" width="149" height="2"/>
+                </progressView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9ox-x8-YMQ">
+                    <rect key="frame" x="334" y="423" width="39" height="37"/>
+                </pageControl>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kHj-v5-JEL">
+                    <rect key="frame" x="306.5" y="488" width="94" height="29"/>
+                </stepper>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bb-3M-bUf">
+                    <rect key="frame" x="330.5" y="20" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="M74-4M-Ry5" firstAttribute="leading" secondItem="9ox-x8-YMQ" secondAttribute="trailing" constant="-94" id="3Pg-jL-PVu"/>
+                <constraint firstItem="ie8-7C-Xrn" firstAttribute="top" secondItem="tjJ-8h-GYz" secondAttribute="bottom" constant="23" id="6dR-wp-bWu"/>
+                <constraint firstItem="VN7-QK-geB" firstAttribute="top" secondItem="8Bb-3M-bUf" secondAttribute="bottom" constant="14" id="AST-dE-5D3"/>
+                <constraint firstItem="5fL-17-YWs" firstAttribute="top" secondItem="VN7-QK-geB" secondAttribute="bottom" constant="24" id="Ae9-zD-wwx"/>
+                <constraint firstItem="kHj-v5-JEL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="E13-I2-4HR"/>
+                <constraint firstItem="VN7-QK-geB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FlJ-NN-XPr"/>
+                <constraint firstItem="8Bb-3M-bUf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Lkh-ie-7if"/>
+                <constraint firstItem="tjJ-8h-GYz" firstAttribute="top" secondItem="5fL-17-YWs" secondAttribute="bottom" constant="8" id="RGZ-3k-8ol"/>
+                <constraint firstItem="9ox-x8-YMQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ver-Ci-fsl"/>
+                <constraint firstItem="M74-4M-Ry5" firstAttribute="top" secondItem="ie8-7C-Xrn" secondAttribute="bottom" constant="33" id="Y38-aG-lHr"/>
+                <constraint firstItem="ie8-7C-Xrn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cHM-2B-DLy"/>
+                <constraint firstItem="M74-4M-Ry5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gIQ-dm-Bnb"/>
+                <constraint firstItem="8Bb-3M-bUf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iBf-rv-bjQ"/>
+                <constraint firstItem="kHj-v5-JEL" firstAttribute="top" secondItem="9ox-x8-YMQ" secondAttribute="bottom" constant="28" id="ogF-4L-7vf"/>
+                <constraint firstItem="5fL-17-YWs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="r7A-OR-GkA"/>
+                <constraint firstItem="tjJ-8h-GYz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="u3T-C3-nU7"/>
+                <constraint firstAttribute="bottom" secondItem="kHj-v5-JEL" secondAttribute="bottom" constant="38" id="yAj-CX-w0q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="199.5" y="134.5"/>
+        </view>
+        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="p2E-au-3qk">
+            <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="76" y="168"/>
+        </switch>
+    </objects>
+</document>

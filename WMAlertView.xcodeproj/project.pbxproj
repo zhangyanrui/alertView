@@ -15,6 +15,8 @@
 		BE31E4201EB0451500D4803C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE31E41E1EB0451500D4803C /* LaunchScreen.storyboard */; };
 		BE31E42B1EB0451600D4803C /* WMAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31E42A1EB0451600D4803C /* WMAlertViewTests.m */; };
 		BE31E4361EB0451600D4803C /* WMAlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31E4351EB0451600D4803C /* WMAlertViewUITests.m */; };
+		BE31E4491EB0B31A00D4803C /* ContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE31E4481EB0B31A00D4803C /* ContentView.xib */; };
+		BE31E44D1EB0C03200D4803C /* WMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31E44C1EB0C03200D4803C /* WMAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		BE31E4311EB0451600D4803C /* WMAlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMAlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE31E4351EB0451600D4803C /* WMAlertViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMAlertViewUITests.m; sourceTree = "<group>"; };
 		BE31E4371EB0451600D4803C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE31E4481EB0B31A00D4803C /* ContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentView.xib; sourceTree = "<group>"; };
+		BE31E44B1EB0C03200D4803C /* WMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMAlertView.h; sourceTree = "<group>"; };
+		BE31E44C1EB0C03200D4803C /* WMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +106,12 @@
 		BE31E40F1EB0451500D4803C /* WMAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				BE31E44A1EB0C03200D4803C /* AlertView */,
 				BE31E4131EB0451500D4803C /* AppDelegate.h */,
 				BE31E4141EB0451500D4803C /* AppDelegate.m */,
 				BE31E4161EB0451500D4803C /* ViewController.h */,
 				BE31E4171EB0451500D4803C /* ViewController.m */,
+				BE31E4481EB0B31A00D4803C /* ContentView.xib */,
 				BE31E4191EB0451500D4803C /* Main.storyboard */,
 				BE31E41C1EB0451500D4803C /* Assets.xcassets */,
 				BE31E41E1EB0451500D4803C /* LaunchScreen.storyboard */,
@@ -139,6 +146,15 @@
 			);
 			path = WMAlertViewUITests;
 			sourceTree = "<group>";
+		};
+		BE31E44A1EB0C03200D4803C /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BE31E44B1EB0C03200D4803C /* WMAlertView.h */,
+				BE31E44C1EB0C03200D4803C /* WMAlertView.m */,
+			);
+			path = AlertView;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -251,6 +267,7 @@
 			files = (
 				BE31E4201EB0451500D4803C /* LaunchScreen.storyboard in Resources */,
 				BE31E41D1EB0451500D4803C /* Assets.xcassets in Resources */,
+				BE31E4491EB0B31A00D4803C /* ContentView.xib in Resources */,
 				BE31E41B1EB0451500D4803C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +296,7 @@
 				BE31E4181EB0451500D4803C /* ViewController.m in Sources */,
 				BE31E4151EB0451500D4803C /* AppDelegate.m in Sources */,
 				BE31E4121EB0451500D4803C /* main.m in Sources */,
+				BE31E44D1EB0C03200D4803C /* WMAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
